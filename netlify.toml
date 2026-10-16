@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Temporary review deployments should not be indexed.
+[context.deploy-preview]
+  command = "npm run build && cp public/robots-preview.txt dist/robots.txt"
