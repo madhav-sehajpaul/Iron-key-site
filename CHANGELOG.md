@@ -31,3 +31,4 @@ No production domain, external account, original repository or live contact endp
 - Studio heading adds "We develop emerging managers." with a matching line in the description.
 - Added a third practice, Emerging managers, beside Venture studio and Venture investing.
 - Homepage order: hero, studio, emerging managers, Neofund, Fish Network, portfolio, contact.
+- Neofund chart restored to the v1 original: v1 layer descriptions, stack size, row layout and green-grey background. The "What is a Neofund?" heading and introduction are unchanged.

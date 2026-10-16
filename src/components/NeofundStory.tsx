@@ -2,11 +2,11 @@ import { useEffect, useRef, useState } from 'react'
 import NeofundLedgerFigure from './NeofundLedgerFigure'
 
 const layers = [
-  { title: 'Mandate', body: 'What you invest in, why it fits your strategy, and what falls outside it.' },
-  { title: 'Capital', body: 'Who has committed capital, where it is allocated, and how it moves through the vehicle.' },
-  { title: 'Ownership', body: 'Who owns what, with a clear record of rights, responsibilities and economic interests.' },
-  { title: 'Decisions', body: 'What was decided, who approved it, and the reasoning recorded at the time.' },
-  { title: 'Reputation', body: 'A history of how you invest, communicate and follow through. Something people can examine for themselves.' },
+  { title: 'Mandate', body: 'The intended ownership and field of action: what the manager will own, where they will act and where they will not.' },
+  { title: 'Capital', body: 'Commitment, allocation, deployment and returns, connected to the vehicle and the people behind it.' },
+  { title: 'Ownership', body: 'The rights, responsibilities and economic interests that define how the organization is held.' },
+  { title: 'Decisions', body: 'The reasoning, approvals and exceptions that make the manager\'s judgment observable over time.' },
+  { title: 'Reputation', body: 'Observable judgment, communication and operating behavior that can compound into institutional trust.' },
 ]
 const labels = layers.map(layer => layer.title)
 
@@ -53,7 +53,6 @@ export default function NeofundStory() {
       <div className="neofund-story__visual-rail">
         <div className="neofund-story__visual">
           <NeofundLedgerFigure activeIndex={activeIndex} labels={labels} onPreviewChange={setPreviewIndex} />
-          <p className="figure-instruction">Scroll or select a layer to explore.</p>
         </div>
       </div>
       <div className="neofund-story__rows">
